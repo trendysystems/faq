@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MVC</title>
+    <link href="/faq/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="ques">
+        <h1>What is MVC</h1>
+        <div class="ans">
+            Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Advantages of MVC</h1>
+        <div class="ans">
+            - ASP.NET MVC framework doesn’t use View State and thus reduces the bandwidth of the requests to an extent.
+            <br />
+            - The MVC framework provides a clean separation of the UI, Business Logic, Model or Data.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>MVC application life cycle</h1>
+        <div class="ans">
+            - Routing
+            <br />
+            - MvcHandler
+            <br />
+            - Controller
+            <br />
+            - Action Execution
+            <br />
+            - View Result
+            <br />
+            - View Engine
+            <br />
+            - View
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Different return types of a controller action</h1>
+        <div class="ans">
+            - ViewResult
+            <br />
+            - PartialviewResult
+            <br />
+            - RedirectResult
+            <br />
+            - RedirectToRouteResult
+            <br />
+            - ContentResult
+            <br />
+            - JsonResult
+            <br />
+            - JavascriptResult
+            <br />
+            - FileResult
+            <br />
+            - EmptyResult
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What are the Filters in MVC</h1>
+        <div class="ans">
+            - Action Filters
+            <br />
+            - Authorization Filters
+            <br />
+            - Result Filters
+            <br />
+            - Exception Filters
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Routing/Route</h1>
+        <div class="ans">
+            A route is a URL pattern.
+            <br />
+            a) Convention-based routing - to define this type of routing, we call MapRoute method and set its unique name, URL pattern and specify some default values.
+            <br />
+            b) Attribute-based routing - to define this type of routing, we specify the Route attribute in the action method of the controller
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Temp data, View, and View Bag</h1>
+        <div class="ans">
+            ViewData:
+            <br />
+            - ViewData is used to pass data from controller to view.
+            <br />
+            - Type is object
+            <br />
+            - Requires typecasting.
+            <br />
+            - If redirection occurs, then its value becomes null.
+            <br />
+            <br />
+            ViewBag:
+            <br />
+            - ViewBag is also used to pass data from the controller to the respective view.
+            <br />
+            - Type is a dynamic
+            <br />
+            - Doesn’t require typecasting
+            <br />
+            - If redirection occurs, then its value becomes null.
+            <br />
+            <br />
+            TempData
+            <br />
+            - TempData is used to pass data from the current request to the next request
+            <br />
+            - It keeps the information for the time of an HTTP Request. This means only from one page to another. It helps to maintain the data when we move from one controller to another controller or from one action to another action
+            <br />
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Partial View in MVC</h1>
+        <div class="ans">
+            Partial view is a reusable view (like a user control) which can be embedded inside another view.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Areas in MVC</h1>
+        <div class="ans">
+            Areas are just a way to divide or “isolate” the modules of large applications in multiple or separated MVC
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Data Annotation in MVC</h1>
+        <div class="ans">
+            DataAnnotation used for validation to properties while designing the model itself. This validation can be added for both the client side and the server side.
+            <br />
+            Ex: Required,Range,StringLength
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Bundling</h1>
+        <div class="ans">
+            Combine or bundle multiple files into a single file.
+            <br />
+            Combine multiple JavaScript (.js) files or multiple cascading style sheet (.css) files so that they can be downloaded as a unit, rather than making individual HTTP requests.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Minification</h1>
+        <div class="ans">
+            Removing unnecessary white space and comments to reducing the size to improve request load time.
+        </div>
+    </div>
+</body>
+</html>
