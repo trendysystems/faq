@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SQL</title>
+    <link href="/faq/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="ques">
+        <h1>SQL</h1>
+        <div class="ans">
+            SQL stands for Structured Query Language , and it is used to communicate with the Database. This is a standard language used to perform tasks such as retrieval, updation, insertion and deletion of data from a database.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Primary Key</h1>
+        <div class="ans">
+            (a) A Primary key is a column (or collection of columns) or a set of columns that uniquely identifies each row in the table.
+            <br />
+            (b) Null values not allowed
+            <br />
+            (c) Only one Primary key constraint defined per table.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Unique key</h1>
+        <div class="ans">
+            (a) A Unique key constraint uniquely identified each record in the database. This provides uniqueness for the column or set of columns.
+            <br />
+            (b) Null values allowed but only one
+            <br />
+            (c)	May Unique key constraint can be defined per table.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Foreign key</h1>
+        <div class="ans">
+            A foreign key is one table which can be related to the primary key of another table. Relationship needs to be created between two tables by referencing foreign key with the primary key of another table.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What are Constraints</h1>
+        <div class="ans">
+            Constraints are used to specify the limit on the data type of the table. It can be specified while creating or altering the table statement. The sample of constraints are:
+            <br /><br />
+            NOT NULL
+            <br />
+            CHECK
+            <br />
+            DEFAULT
+            <br />
+            UNIQUE
+            <br />
+            PRIMARY KEY
+            <br />
+            FOREIGN KEY
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What is a join</h1>
+        <div class="ans">
+            This is a keyword used to query data from more tables based on the relationship between the fields of the tables.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>
+            Type of Joins?
+        </h1>
+        <div class="ans">
+            a) JOIN OR INNER JOIN: Returns records that have matching values in both tables
+            <br />
+            b) LEFT JOIN OR LEFT OUTER JOIN: Returns all records from the left table, and the matched records from the right table
+            <br />
+            c) RIGHT JOIN OR RIGHT OUTER JOIN: Returns all records from the right table, and the matched records from the left table
+            <br />
+            d) FULL JOIN OR FULL OUTER JOIN: Returns all records when there is a match in either left or right table
+            <br />
+            e) CROSS JOIN: produces a result set which is the number of rows in the first table multiplied by the number of rows in the second table
+            <br />
+            f) SELF JOIN: A self JOIN is a regular join, but the table is joined with itself.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What is the difference between DELETE and TRUNCATE and DROP statements</h1>
+        <div class="ans">
+            Delete
+            <br />
+            - Delete command is used to delete a row in a table as per the condition.
+            <br />
+            - You can rollback data after using delete statement.
+            <br />
+            - It is a DML command.
+            <br />
+            - It is slower than truncate statement.
+            <br /><br />
+
+            Truncate
+            <br />
+            - Truncate is used to delete all the rows from a table.
+            <br />
+            - You cannot rollback data.
+            <br />
+            - It is a DDL command.
+            <br />
+            - It is faster.
+            <br /><br />
+
+            DROP
+            <br />
+            - It is a DDL command.
+            <br />
+            - This command will drop the table data and structure.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>DDL, DQL, DML, DCL and TCL</h1>
+        <div class="ans">
+            DDL:
+            <br />
+            - DDL is Data Definition Language and is used to define the structures like schema, database, tables, constraints etc.
+            <br />
+            - Examples of DDL are CREATE, DROP, RENAME and ALTER.
+            <br />
+            DML:
+            <br />
+            - DML is Data Manipulation Language and is used to manipulate data.
+            <br />
+            - Examples of DML are INSERT, UPDATE and DELETE.
+            <br />
+            DQL:
+            <br />
+            - Data Query Language
+            <br />
+            - DML statements are used for performing queries on the data within schema objects.
+            <br />
+            - Examples: SELECT
+            <br />
+            DCL:
+            <br />
+            - Data Control Language
+            <br />
+            - DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of the database system.
+            <br />
+            - Examples
+            <br />
+            GRANT - gives user’s access privileges to database.
+            <br />
+            REVOKE - withdraw user’s access privileges given by using the GRANT command.
+            <br />
+            TCL:
+            <br />
+            - Transaction Control Language
+            <br />
+            - TCL commands deals with the transaction within the database.
+            <br />
+            Examples
+            <br />
+            COMMIT – commits a Transaction.
+            <br />
+            ROLLBACK – rollbacks a transaction in case of any error occurs.
+            <br />
+            SAVEPOINT – sets a savepoint within a transaction.
+            <br />
+            SET TRANSACTION – specify characteristics for the transaction.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Normalization vs Denormalization</h1>
+        <div class="ans">
+            Normalization is used to remove redundant data from the database by using forign key relationship.
+            <br />
+            Denormalization is used to combine multiple table data into one so that it can be queried quickly.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Stored Procedures</h1>
+        <div class="ans">
+            - The group of SQL statements which are or have been stored in the server database is known as a stored procedure.
+            <br />
+            - Procedures are used to process the huge amount of data for complex procedures and functionalities.
+            <br />
+            - it is faster because it is a pre-compiled block of code.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>UNION VS UNION ALL</h1>
+        <div class="ans">
+            Both union and union all used to combine two sets of results into one result.
+            <br />
+            But UNION removes duplicate values
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What is an aggregate function</h1>
+        <div class="ans">
+            An aggregate function is an SQL function that reads data from multiple rows and displays a single value. Some examples of aggregate functions are COUNT, SUM, MIN, MAX, and AVG. They are often used with a GROUP BY clause but can be used by themselves.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What is Cursor</h1>
+        <div class="ans">
+            A Cursor is a database object that represents a result set and is used to manipulate data row by row.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>What is View</h1>
+        <div class="ans">
+            - A view is a virtual table which consists of a subset of data contained in a table.
+            <br />
+            - View can have data of one or more tables combined, and it is depending on the relationship.
+        </div>
+    </div>
+</body>
+</html>
