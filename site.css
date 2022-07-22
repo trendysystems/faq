@@ -1,8 +1,15 @@
+body{
+    font-family: Open Sans;
+}
 .main-menu {
     margin-top: 10%;
     text-align: center
 }
 
 .main-menu a {
-    font-size: 14px;
+    font-size: 3em;
+}
+
+.ques h1 {
+    font-size: 20px;
 }
