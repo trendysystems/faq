@@ -8,6 +8,8 @@ body{
 
 .main-menu a {
     font-size: 3em;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .ques h1 {
