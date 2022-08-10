@@ -225,5 +225,56 @@
             - View can have data of one or more tables combined, and it is depending on the relationship.
         </div>
     </div>
+
+    <div class="ques">
+        <h1>CTE?</h1>
+        <div class="ans">
+            - Common Table Expressions.
+            <br />
+            - CTE is a named temporary result set which is used to manipulate the complex sub-queries data.
+            <br />
+            - CTE can only be used in the current query scope.
+            <br />
+            - You cannot create an index on CTE.
+            <br />
+            - CTE can reference itself for recursive queries.
+            <br />
+            - More readable
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Table Variable?</h1>
+        <div class="ans">
+            - Table Variable acts like a variable and exists for a particular batch of query execution.
+            <br />
+            - It gets dropped once it comes out of a batch.
+            <br />
+            - This is also created in the tempdb database but not the memory.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Temp Table?</h1>
+        <div class="ans">
+            - Temp Tables are physically created in the tempdb database.
+            <br />
+            - These tables act as the normal table and also can have constraints, an index like normal tables.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>Local Temp Table vs Global Temp Table?</h1>
+        <div class="ans">
+            Local Temp Table:
+            <br />
+            Local temp tables are only available to the SQL Server session or connection (means single user) that created the tables. These are automatically deleted when the session that created the tables has been closed. The local temporary table name is stared with a single hash ("#") sign.
+            <br />
+            <br />
+            Global Temp Table:
+            <br />
+            Global temp tables are available to all SQL Server sessions or connections (means all the user). These can be created by any SQL Server connection user and these are automatically deleted when all the SQL Server connections have been closed. The global temporary table name is stared with double hash ("##") sign.
+        </div>
+    </div>
 </body>
 </html>

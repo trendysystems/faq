@@ -393,5 +393,61 @@
             The optional parameters are always defined at the end of the parameter list.
         </div>
     </div>
+
+    <div class="ques">
+        <h1>var vs dynamic?</h1>
+        <div class="ans">
+            var:
+            <br />
+            - The type of the variable is decided at compile time.
+            <br />
+            - Can only used as a local variable in function.
+            <br />
+            dynamic:
+            <br />
+            - The type of the variable is decided at run time.
+            <br />
+            - Can be used for properties or returning values from the function.
+        </div>
+    </div>
+
+    <div class="ques">
+        <h1>static vs singleton?</h1>
+        <div class="ans">
+            static:
+            <br />
+            - A class having all static methods.
+            <br />
+            - You cannot create the instance of static class.
+            <br />
+            - Loaded automatically by the .NET Framework common language runtime (CLR) when the program or namespace containing the class is loaded.
+            <br />
+            - We cannot pass the static class to method.
+            <br />
+            - We cannot inherit Static class to another Static class in C#.
+            <br />
+            - static objects are stored in stack.
+            <br />
+            singleton:
+            <br />
+            - You can create one instance of the object and reuse it.
+            <br />
+            - Singleton instance is created for the first time when the user requested.
+            <br />
+            - You can create the object of singleton class and pass it to method.
+            <br />
+            - Singleton class does not say any restriction of Inheritance.
+            <br />
+            - We can dispose the objects of a singleton class but not of static class.
+            <br />
+            - Methods can be overridden.
+            <br />
+            - Can be lazy loaded when need (static classes are always loaded).
+            <br />
+            - We can implement interface(static class can not implement interface).
+            <br />
+            - Singleton objects are stored in Heap
+        </div>
+    </div>
 </body>
 </html>
