@@ -18,11 +18,17 @@
         <h1>Advantages of .Net Core</h1>
         <div class="ans">
             - Cross Platform
+            <br>
             - Built-in supports for Dependency Injection
+            <br>
             - Multiple hosting ways are supported. Ex: Kestrel
+            <br>
             - Command-line supports to create, build and run the application
+            <br>
             - Good support for asynchronous programming
+            <br>
             - Razor Pages
+            <br>
             - View/Design codes compiled into dll
         </div>
     </div>
@@ -31,6 +37,7 @@
         <h1>Dependency Injection</h1>
         <div class="ans">
             - Dependency Injection is passing dependency to other objects or framework( dependency injector).
+            <br>
             - The injection can be done through constructor.
         </div>
     </div>
@@ -39,7 +46,9 @@
         <h1>Razor Pages in ASP.NET Core</h1>
         <div class="ans">
             - This is a new feature introduced in ASP.NET Core 2.0.
+            <br>
             - The Razor pages start with the @page directive.
+            <br>
             - This directive handle request directly without passing through the controller.
         </div>
     </div>
@@ -48,6 +57,7 @@
         <h1>What is middleware</h1>
         <div class="ans">
             It is software which is injected into the application pipeline to handle request and responses.
+            <br>
             Ex: Session
         </div>
     </div>
@@ -56,19 +66,29 @@
         <h1>How to specify service lifetime for register service that added as a dependency</h1>
         <div class="ans">
             ASP.NET Core allows us to specify the lifetime for registered services. The service instance gets disposed of automatically based on a specified lifetime. So, we do not care about the cleaning these dependencies, it will take care by ASP.NET Core framework. There is three type of lifetimes.
+            <br>
             Singleton:
+            <br>
             ASP.NET Core will create and share a single instance of the service through the application life. The service can be added as a singleton using AddSingleton method of IServiceCollection. ASP.NET Core creates service instance at the time of registration and subsequence request use this service instance. Here, we do not require to implement Singleton design pattern and single instance maintained by the ASP.NET Core itself.
+            <br>
             Ex:
-            services.AddSingleton&lt;IHelloWorldService, HelloWorldService&gt;
-            ();
+            <br>
+            services.AddSingleton&lt;IHelloWorldService, HelloWorldService&gt;();
+            <br>
             Transient:
+            <br>
             ASP.NET Core will create and share an instance of the service every time to the application when we ask for it. The service can be added as Transient using AddTransient method of IServiceCollection. This lifetime can be used in stateless service. It is a way to add lightweight service.
+            <br>
             Ex:
-            services.AddTransient&lt;IHelloWorldService, HelloWorldService&gt;
-            ();
+            <br>
+            services.AddTransient&lt;IHelloWorldService, HelloWorldService&gt;();
+            <br>
             Scoped:
+            <br>
             ASP.NET Core will create and share an instance of the service per request to the application. It means that a single instance of service available per request. It will create a new instance in the new request. The service can be added as scoped using an AddScoped method of IServiceCollection. We need to take care while, service registered via Scoped in middleware and inject the service in the Invoke or InvokeAsync methods. If we inject dependency via the constructor, it behaves like singleton object.
+            <br>
             Ex:
+            <br>
             services.AddScoped&lt;IHelloWorldService, HelloWorldService&gt;();
         </div>
     </div>
@@ -77,7 +97,9 @@
         <h1>What is Kestral</h1>
         <div class="ans">
             - Kestrel is a cross-platform web server
+            <br>
             - If our application accepts requests only from an internal network, you can use Kestrel by itself.
+            <br>
             - If we expose your application to the Internet, you must use IIS, Nginx, or Apache as a reverse proxy server. A reverse proxy server receives HTTP requests from the Internet and forwards them to Kestrel after some preliminary handling.
         </div>
     </div>
