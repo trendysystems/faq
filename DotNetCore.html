@@ -67,6 +67,7 @@
         <div class="ans">
             ASP.NET Core allows us to specify the lifetime for registered services. The service instance gets disposed of automatically based on a specified lifetime. So, we do not care about the cleaning these dependencies, it will take care by ASP.NET Core framework. There is three type of lifetimes.
             <br>
+            <br>
             Singleton:
             <br>
             ASP.NET Core will create and share a single instance of the service through the application life. The service can be added as a singleton using AddSingleton method of IServiceCollection. ASP.NET Core creates service instance at the time of registration and subsequence request use this service instance. Here, we do not require to implement Singleton design pattern and single instance maintained by the ASP.NET Core itself.
@@ -75,6 +76,7 @@
             <br>
             services.AddSingleton&lt;IHelloWorldService, HelloWorldService&gt;();
             <br>
+            <br>
             Transient:
             <br>
             ASP.NET Core will create and share an instance of the service every time to the application when we ask for it. The service can be added as Transient using AddTransient method of IServiceCollection. This lifetime can be used in stateless service. It is a way to add lightweight service.
@@ -82,6 +84,7 @@
             Ex:
             <br>
             services.AddTransient&lt;IHelloWorldService, HelloWorldService&gt;();
+            <br>
             <br>
             Scoped:
             <br>
